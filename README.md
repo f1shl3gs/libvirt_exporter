@@ -2,8 +2,8 @@
 Collecting metrics from libvirtd
 
 ## Features
-- Pure Go implement 
-- it can be enabled
+- pure Go implement 
+- it can be `embeded` to another application
 - gzip enabled for http response
 
 ## Build
