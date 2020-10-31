@@ -1,0 +1,17 @@
+[Unit]
+Description=Libvirt Exporter
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+User=nobody
+Group=nobody
+
+Type=simple
+ExecStart=/usr/bin/libvirt_exporter
+
+# restart policy
+Restart=always
+RestartSec=2s
+
+[Install]
+WantedBy=multi-user.target
